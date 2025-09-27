@@ -1,0 +1,119 @@
+/* Reset básico para garantir altura total */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+/* Container principal com Flexbox */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Garante que o container ocupe toda a altura da janela */
+}
+
+/* Conteúdo principal ocupa o espaço restante */
+.product-container {
+    flex: 1 0 auto; /* Permite que o conteúdo cresça, mas não encolha além do necessário */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+/* Estilização do header */
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: #ff6200;
+    padding: 10px 20px;
+    color: white;
+}
+
+.logo img {
+    width: 40px;
+    height: 40px;
+}
+
+nav {
+    flex: 1;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Estilização do footer */
+footer {
+    background-color: #e65c00;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    flex-shrink: 0; /* Impede que o footer encolha */
+}
+
+.footer-content img {
+    height: 35px;
+    margin-bottom: 8px;
+}
+
+.footer-content p {
+    margin: 0;
+    font-size: 12px;
+}
+
+/* Estilização dos produtos */
+.product-item {
+    border: 1px solid #ddd;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    width: 150px;
+}
+
+.product-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+.product-item p {
+    margin: 5px 0;
+}
+
+.product-item button {
+    background-color: #ff6200;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.product-item button:hover {
+    background-color: #e65c00;
+}
