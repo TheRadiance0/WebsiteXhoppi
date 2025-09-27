@@ -1,0 +1,101 @@
+body {
+    background-color: white;
+    margin: 0;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+
+#cabecalho {
+    width: 100%;
+    height: 60px;
+    background-color: #e8e8e8;
+}
+
+.centro {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.formulario {
+    height: 30px;
+    width: 440px;
+    padding-left: 10px;
+    margin-top: 20px;
+}
+
+#entrar {
+    background-color: orangered;
+    width: 450px;
+    height: 30px;
+    margin-top: 30px;
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+}
+
+#bloco {
+    background-color: #e8e8e8;
+    height: 250px;
+    width: 600px;
+    margin-top: 125px;
+    margin-bottom: 175px;
+    border-radius: 2%;
+}
+
+#xhoppi {
+    float: left;
+    margin-left: 10px;
+    margin-top: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    color:orangered;
+    font-size: x-large;
+}
+
+#ajuda {
+    float: right;
+    color: orangered;
+    margin-right: 20%;
+    margin-top: 20px;
+}
+
+#fundo {
+    width: 100%;
+    height: 334px;
+    background-color: #e8e8e8;
+    margin-top: 40px;
+    display: flex;
+}
+
+.titulosFundo {
+    font-size: larger;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.conjunto{
+    width: 250px;
+    margin-left: 50px;
+}
+
+.conjunto:first-of-type{
+    margin-left: 250px;
+}
+
+.pagamento {
+    height: 34px;
+    width: 64px;
+}
+
+.redes {
+    height: 30px;
+    width: 30px;
+}

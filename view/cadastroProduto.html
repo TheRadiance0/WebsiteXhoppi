@@ -1,53 +1,37 @@
 <!DOCTYPE html>
 <html>
     <head>
-    <link rel="stylesheet" type="text/css" href="/assets/telalogin.css">
-        <title>Login</title>
+    <link rel="stylesheet" type="text/css" href="/assets/cadastroProduto.css">
+        <title>Cadastro de Cliente</title>
     </head>
     <body>
         <div id="cabecalho">
             <img src="/assets/img/logo.png" alt="logo" width="50px" height="50px" style="margin-top: 5px; margin-left: 20%; float: left;">
             <h1 id="xhoppi">Xhoppi</h1>
-            <p id="ajuda">Precisa de ajuda?</p>
+            <a id="ajuda" href="telalogin.html">Sair</a>
+        </div>
+        <div id="cabecalhoinferior">
+            <a class="opcoes" style="margin-left: -50px;" href="home.html">Home</a>
+            <a class="opcoes" href="cadastroCliente.html">Cadastro Cliente</a>
+            <a class="opcoes" href="cadastroFuncionario.html">Cadastro Funcionário</a>
+            <a class="opcoes" href="cadastroProduto.html">Cadastro Produto</a>
+            <a class="opcoes" href="login.html">Ver Clientes</a>
+            <a class="opcoes" href="login.html">Ver Funcionários</a>
+            <a class="opcoes" href="login.html">Ver Produtos</a>
         </div>
         <div class="centro" id="bloco">
-            <p style="padding-top: 20px; font-size: larger;">Login</p>
+            <p style="padding-top: 20px; font-size: larger; margin-bottom: 0px;">Login</p>
             <form>
-                <input type="text" placeholder="Email" name="email" class="formulario">
-                <input type="password" placeholder="Senha" name="senha" class="formulario" style="margin-top: 40px;">
+                <input type="text" placeholder="Nome" name="nome" class="formulario">
+                <input type="text" placeholder="Descrição" name="descricao" class="formulario">
+                <input type="text" placeholder="Fabricante" name="fabricante" class="formulario"> 
+                <input type="text" placeholder="Valor" name="valor" class="formulario">
+                <input type="number" placeholder="Quantidade" name="quantidade" class="formulario">
+                <p style="color: orangered; font-weight: 700;">Selecionar foto do produto:</p>
+                <input type="file" name="foto" class="formulario" id="foto"> 
             </form>
             <div id="entrar" class="centro">
-                <a style="color: white; font-weight: 700; display: block; margin-top: 4px;" href="home.html">ENTRE</a>
-            </div>
-            <div>
-                <a style="float: left; font-size: small; margin-left: 50px; margin-top: 20px;" href="redefinirSenha.html">Esqueci minha senha</a>
-                <a style="float: right; font-size: small; margin-right: 50px; margin-top: 20px; color: blue;">Fazer login com SMS</a>
-            </div>
-            <div>
-                <br>
-                <br>
-                <div style="float:left; width: 44%; margin-top: 15px;"><hr/></div>
-                <div style="float:right; width: 44%; margin-top: 15px;"><hr/></div>
-                <p>OU</p>
-            </div>
-            <div>
-                <div class=opcoes>
-                    <p class="opcoestexto" style="margin-right: 8px">Facebook</p>
-                    <img src="/assets/img/facebook.png" alt="facebook" class="opcoesimagem">
-                </div>
-                <div class=opcoes>
-                    <p class="opcoestexto" style="margin-right: 15px">Google</p>
-                    <img src="/assets/img/google.png" alt="google" class="opcoesimagem">
-                </div>
-                <div class=opcoes>
-                    <p class="opcoestexto" style="margin-right: 20px">Apple</p>
-                    <img src="/assets/img/apple.png" alt="apple" class="opcoesimagem">
-                </div>
-                <div>
-                    <br>
-                    <p style="float: left; color: gray; margin-left: 100px;">Novo na Xhoppi?</p>
-                    <a style="float: right; color: orangered; margin-right: 100px; margin-top: 16px;" href="cadastroCliente.html">Cadastrar</a>
-                </div>
+                <a style="color: white; font-weight: 700; display: block; margin-top: 4px;" href="telalogin.html">CADASTRAR</a>
             </div>
         </div>
         <div id="fundo">

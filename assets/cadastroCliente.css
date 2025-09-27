@@ -1,0 +1,121 @@
+body {
+    background-color: gray;
+    margin: 0;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+
+#cabecalho {
+    width: 100%;
+    height: 60px;
+    background-color: orangered;
+}
+
+#cabecalhoinferior {
+    width: 100%;
+    height: 30px;
+    background-color: orange;
+}
+
+.opcoes {
+    color: white;
+    margin-left: 20px;
+    margin-top: 5px;
+    font-weight: 700;
+    display: inline-block;
+}
+
+.centro {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.formulario {
+    height: 30px;
+    width: 300px;
+    padding-left: 10px;
+    margin-top: 20px;
+}
+
+#entrar {
+    background-color: orangered;
+    width: 300px;
+    height: 30px;
+    margin-top: 30px;
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+}
+
+#bloco {
+    background-color: whitesmoke;
+    height: 600px;
+    width: 400px;
+    margin-top: 15px;
+    border-radius: 2%;
+}
+
+#xhoppi {
+    float: left;
+    margin-left: 10px;
+    margin-top: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: x-large;
+}
+
+#ajuda {
+    float: right;
+    color: white;
+    margin-right: 20%;
+    margin-top: 20px;
+    font-size: large;
+    font-weight: 700;
+}
+
+#fundo {
+    width: 100%;
+    height: 334px;
+    background-color: #e8e8e8;
+    margin-top: 40px;
+    display: flex;
+}
+
+#foto {
+    color: orangered;
+    margin-top: 0px;
+}
+
+.titulosFundo {
+    font-size: larger;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.conjunto{
+    width: 250px;
+    margin-left: 50px;
+}
+
+.conjunto:first-of-type{
+    margin-left: 250px;
+}
+
+.pagamento {
+    height: 34px;
+    width: 64px;
+}
+
+.redes {
+    height: 30px;
+    width: 30px;
+}
