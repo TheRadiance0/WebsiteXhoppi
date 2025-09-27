@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produto</title>
+    <link rel="stylesheet" href="../assets/produto.css">
+    <link rel="shortcut icon" href="../assets/img/logo.png" type="image/x-icon">
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="../assets/img/logo.png" alt="Xhopii Logo">
+        </div>
+        <nav id="nav">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="cadastroCliente.html">Cadastro Clientes</a></li>
+                <li><a href="cadastroFuncionario.html">Cadastro Funcionário</a></li>
+                <li><a href="cadastroProduto.html">Cadastro Produtos</a></li>
+                <li><a href="#">Ver Clientes</a></li>
+                <li><a href="#">Ver Funcionários</a></li>
+                <li><a href="verProdutos.html">Ver Produtos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="product-page">
+        <div class="product-images">
+            <div class="main-image">
+                <img src="../assets/img/produto1.png" alt="Camiseta Desenvolvedor Front-End CSS">
+            </div>
+            <div class="thumbnail-images">
+                <img src="../assets/img/produto1.png" alt="Thumbnail 1">
+                <img src="../assets/img/produto2.png" alt="Thumbnail 2">
+                <img src="../assets/img/produto3.png" alt="Thumbnail 3">
+                <img src="../assets/img/produto4.png" alt="Thumbnail 4">
+                <img src="../assets/img/produto5.png" alt="Thumbnail 5">
+            </div>
+        </div>
+
+        <div class="product-details">
+            <h1>Camiseta Desenvolvedor Front-End CSS</h1>
+            <div class="price">
+                <span>R$ 59,90</span>
+            </div>
+
+            <div class="product-info">
+                <p><strong>Modelo:</strong> <span>Unissex</span></p>
+                <p><strong>Cor:</strong>
+                    <select>
+                        <option>Preto</option>
+                        <option>Cinza</option>
+                        <option>Verde</option>
+                        <option>Azul</option>
+                    </select>
+                </p>
+                <p><strong>Tamanho:</strong>
+                    <select>
+                        <option>P</option>
+                        <option>M</option>
+                        <option>G</option>
+                        <option>GG</option>
+                    </select>
+                </p>
+            </div>
+
+            <button class="add-to-cart">Adicionar ao Carrinho</button>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <img src="../assets/img/qr-code.png" alt="Xhopii QR Code">
+            <p>&copy; 2025 Xhopii. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        const mainImage = document.querySelector('.main-image img');
+        const thumbnails = document.querySelectorAll('.thumbnail-images img');
+
+        thumbnails.forEach(thumbnail => {
+            thumbnail.addEventListener('click', () => {
+                mainImage.src = thumbnail.src;
+                mainImage.alt = thumbnail.alt;
+            });
+        });
+    </script>
+</body>
+
+</html>
